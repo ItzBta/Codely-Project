@@ -7,7 +7,6 @@ html {
 }
 .content {
   height: 1000px; 
-  height: 100%; 
 }
 
 .light-mode{
@@ -34,6 +33,7 @@ h2{
   text-align: start;
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
+  flex-wrap:wrap;
 }
 
 .left-menu{
@@ -182,8 +182,8 @@ h2{
   display:flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  
+  align-items: end;
+ 
 }
 .right{
   flex:1;
@@ -222,10 +222,7 @@ h2{
 }
 .div-container{
   height:200px;
-  width:100%;
-}
-.font-sublima{
-  font-family:arial;
+  width:100vw
 }
 .banner-btn{
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -350,12 +347,7 @@ h2{
   height: 70px;
   
 }
-.skillsNavbar{
-  display:flex;
-  flex:1;
-  width: auto;
-  right: 30px;
-}
+
 .skillsNavigation{
   position:fixed;
   flex-direction: row;
@@ -529,3 +521,123 @@ a:hover{
   }
   
  
+  
+  
+  
+  
+  .text-box {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .text-box div {
+    display: inline-block;
+    position: absolute;
+    top: -200px;
+    transform: rotateX(-90deg);
+    opacity: 0;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    animation-timing-function: ease;
+  }
+  
+  .text-box div:nth-child(1) {
+    animation: rollDown 10s forwards infinite;
+  }
+  
+  .text-box div:nth-child(2) {
+    animation: rollDown2 10s forwards infinite;
+  }
+  
+  .text-box div:nth-child(3) {
+    animation: rollDown3 10s forwards infinite;
+  }
+  
+  @keyframes rollDown {
+    0% {
+      top: -200px;
+      transform: rotateX(-90deg);
+    }
+    11% {
+      top: -74px;
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+    22% {
+      top: -74px;
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+    33% {
+      top: 50px;
+      transform: rotateX(30deg);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes rollDown2 {
+    33% {
+      top: -200px;
+      transform: rotateX(-90deg);
+    }
+    44% {
+      top: -74px;
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+    55% {
+      top: -74px;
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+    66% {
+      top: 50px;
+      transform: rotateX(30deg);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes rollDown3 {
+    66% {
+      top: -200px;
+      transform: rotateX(-90deg);
+    }
+    77% {
+      top: -74px;
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+    88% {
+      top: -74px;
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+    99% {
+      top: 50px;
+      transform: rotateX(30deg);
+      opacity: 0;
+    }
+  }
+.slider {
+  height: 100px;
+  
+   text-align: center;
+   position: relative;
+ }
+.slider-container{
+  width:  25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+ 
+}
+.caption {
+  font-family: 'Poppins', sans-serif;
+  line-height: 100px;
+  font-size: 60px;
+  color: #fff;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  margin-left: -400px;
+}
