@@ -1,0 +1,140 @@
+let b = prompt("First number ");
+let c = prompt("Second number");
+let d = prompt("Third number");
+
+
+let product = b*c;
+let result = product - d;
+
+console.log(result);
+
+
+
+
+
+
+
+
+
+
+let day = prompt("How many days?");
+let hour = prompt("How many hours?");
+hours= day*24+hour
+
+let number1 = prompt("First Number:");
+let number2 = prompt("Second Number");
+number1 = parseFloat(number1);
+number2 = parseFloat(number2);
+
+function sum(number1, number2) {
+  return number1 + number2;
+}
+
+alert(sum(number1, number2));
+
+var height = prompt("Length")
+var width = prompt("Width")
+
+if(width==height){
+    alert("It's a square")
+}
+else if(width>height){
+    alert("It's landscape.")
+}
+else if(width<height){
+    alert("It's portrait.")
+}
+else{
+    alert("Enter a valid number!")
+}
+
+
+
+
+
+
+
+
+
+let variable1 = prompt("First number");
+let variable2 = prompt("Second nunber");
+
+console.log("Before");
+console.log("Variable1="+variable1)
+console.log("Variable2="+variable2)
+
+let blank = variable1;
+variable1 = variable2;
+variable2 = blank;
+console.log("After");
+console.log("Variable1="+variable1);
+console.log("Variable2="+variable2);
+
+
+
+
+
+
+
+
+
+function showStars(starCount) {
+    let row = '';
+    for (let i= 0; i < starCount; i++) {
+      row += '*';
+      console.log(row);
+    }
+  }
+
+  const input=[1,23,12,4,235,4,4,42,4,2,34,'df','fs','df','s','d','f','sdf'];
+  let NumberCount=0;
+    for (let i = 0; i < input.length; i++) {
+        if(input[i]=Number){NumberCount++}
+    }
+console.log('Numbers:',NumberCount)
+
+const car = {
+    brand: 'Toyota',
+    name: 'Prius',
+    price: 20000000
+  };
+  
+  const keys = Object.keys(car);
+  
+  for (let i = 0; i < keys.length; i++) {
+    const key = keys[i];
+    console.log(key + '=' + car[key]);
+  }
+  
+let Num1=prompt("FIrst number");
+let Num2=prompt("Second number");
+
+if (Num1>Num2){
+  console.log(Num1+"is greater.")
+}
+else if('num1'==='num2'){
+  console.log("Equal.")
+}
+else{
+  console.log(Num2+"is greater.")
+}
+
+
+
+
+
+function EvenOrOdd(num) {
+  for (let i = 0; i < num.length; i++) {
+    var blank = num / 2;
+    var remainder = num - blank;
+  
+     if (remainder === 0) {
+       console.log("even");
+     } else {
+       console.log("odd");
+     }
+   }
+}
+
+
+
